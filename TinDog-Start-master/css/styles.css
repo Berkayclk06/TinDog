@@ -1,4 +1,6 @@
 
+/************ MAIN ******************/
+
 #title{
     background: #ff4c68;
     color: #fff ;
@@ -6,20 +8,9 @@
 
 body{
     font-family: 'Monstserrat', sans-serif;
+    text-align: center;
 }
 
-h1{
-    font-weight: 900;
-    font-size: 2.5rem;
-    line-height: 1.5;
-}
-
-h2{
-    font-family: 'Monstserrat', sans-serif;
-    font-weight: bold;
-    font-size: 3rem;
-    line-height: 1.5;
-}
 
 .container-fluid{
 
@@ -27,7 +18,39 @@ h2{
 
 }
 
-/* Navbar */
+/*************** Headings **************/
+
+.big-heading{
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Monstserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+#features h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+#cta h3 {
+    font-size: 3.5rem;
+    margin: 20px auto;
+    width: 80%;
+}
+
+
+
+/***************** Navbar **************/
 
 .navbar{
     padding: 0 0 4.5rem;
@@ -47,13 +70,13 @@ h2{
     font-weight: 100;
 }
 
-/* Download-Buttons */
+/*************************** Download-Buttons ****************/
 
 .download-button{
     margin: 5% 3% 5% 0;
 }
 
-/* Title Image */
+/********************* Title Image ************************/
 
 .title-img-position{
     position: relative;
@@ -64,13 +87,11 @@ h2{
     transform:rotate(25deg);
     position: absolute;
     right: 30%;
-    top: -40px;
 }
 
-/* Middle-Row with Images */
+/********************** Middle-Row with Images **************/
 
 .middle-row{
-    text-align: center;
     margin-top: 5%;
 }
 
@@ -101,6 +122,8 @@ h2{
     color: #ff4c68;
 }
 
+/******************** features **********************/
+
 #features {
     padding: 7% 15%;
     background-color: #fff;
@@ -108,12 +131,6 @@ h2{
     z-index: 1;
 }
 
-#features h3 {
-    font-family: 'Monstserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 20px;
-}
 
 #features p{
     color: #8f8f8f;
@@ -122,11 +139,9 @@ h2{
     margin-bottom: 50px;
 }
 
-/* Testimanoials */
+/******************** Testimanoials ********************/
 
 #testimonials{
-
-    text-align: center;
     background-color: #ef8172;
     color: #fff;
 }
@@ -142,11 +157,10 @@ h2{
     height: 100%;
 }
 
-/* PRESS */
+/******************** PRESS **********************/
 
 #press{
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 
@@ -155,13 +169,52 @@ h2{
     margin: 20px 20px 50px ;
 }
 
-/* PRICING */
+/****************** PRICING *************************/
 
 #pricing{
     padding: 100px;
-    text-align: center;
 }
 
 .pricing-column{
     padding: 3% 2%;
+}
+
+/******************* CTA SECTION ********************/
+
+#cta {
+    background-color: #ff4c68;
+    padding: 5% 15%;
+    color: #fff ;
+}
+
+
+
+/******************** FOOTER *********************/
+
+#footer{ 
+    background-color: #fff;
+    padding: 5% 15%;
+}
+
+#footer i{
+    margin: 10px;
+}
+
+#footer p {
+    color: #8f8f8f;
+    margin-top: 20px;
+}
+
+/********************** MEDIA QUERY **************/
+
+@media (max-width: 991px) {
+
+    #title{
+        text-align: center;
+    }
+
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
 }
